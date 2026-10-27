@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Best Cars Dealership</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #ffffff;
+            font-family: Arial, sans-serif;
+            color: #628de0;
+        }
+
+        .navbar {
+            background-color: #00c5c9;
+            min-height: 62px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            gap: 45px;
+        }
+
+        .navbar .brand {
+            font-size: 22px;
+            color: #111111;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .navbar .nav-links a {
+            color: #155c62;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 8px 0;
+        }
+
+        .navbar .nav-links a.active {
+            color: #073e42;
+            font-weight: bold;
+            border-bottom: 2px solid #073e42;
+        }
+
+        .contact-card {
+            max-width: 675px;
+            margin: 24px auto;
+            border: 1px solid #cccccc;
+            border-radius: 32px;
+            box-shadow: 0 2px 3px #aaaaaa;
+            padding: 17px;
+            background: white;
+        }
+
+        .showroom {
+            display: block;
+            width: 60%;
+            height: 180px;
+            object-fit: cover;
+            margin: 0 auto 2px;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-top: 1px solid #dddddd;
+            padding-top: 12px;
+            min-height: 145px;
+        }
+
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 2px solid #777777;
+            padding: 10px;
+        }
+
+        .contact-icon span {
+            font-size: 90px;
+            color: #00c5c9;
+        }
+
+        .contact-details {
+            text-align: center;
+            padding: 0 10px;
+            font-size: 12px;
+            line-height: 1.65;
+        }
+
+        .contact-details p {
+            margin: 0;
+        }
+
+        .contact-details strong {
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                gap: 18px;
+                padding: 12px;
+            }
+
+            .navbar .nav-links {
+                gap: 12px;
+            }
+
+            .contact-card {
+                margin: 20px 12px;
+                padding: 12px;
+                border-radius: 22px;
+            }
+
+            .showroom {
+                width: 90%;
+                height: 150px;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-icon {
+                border-right: none;
+                border-bottom: 1px solid #dddddd;
+            }
+
+            .contact-details {
+                padding: 15px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="brand">Dealerships</a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about/">About Us</a>
+            <a href="/contact/" class="active" aria-current="page">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <main class="contact-card">
+        <img
+            class="showroom"
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+            alt="Cars at the Best Cars dealership showroom"
+        >
+
+        <div class="contact-content">
+            <div class="contact-icon">
+                <span aria-hidden="true">&#9742;</span>
+            </div>
+
+            <div class="contact-details">
+                <p><strong>Contact Customer Service</strong></p>
+                <p>support@bestcars.com</p>
+
+                <p><strong>Contact our National Advertising team</strong></p>
+                <p>NationalSales@bestcars.com</p>
+
+                <p><strong>Contact our Public Relations team</strong></p>
+                <p>PR@bestcars.com</p>
+
+                <p><strong>Contact the bestcars.com offices</strong></p>
+                <p>312-611-1111</p>
+
+                <p><strong>Become a bestcars.com car dealer</strong></p>
+                <p>Visit growwithbestcars.com</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
